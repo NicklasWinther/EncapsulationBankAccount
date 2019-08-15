@@ -1,0 +1,22 @@
+﻿@page
+@model EncapsulationBankAccount.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_layout.cshtml";
+}
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Beløb</th>
+        <th>Oprettelsesdato</th>
+    </tr>
+        @foreach (Account account in Model.accounts)
+        {
+    <tr>
+            <td>@account.Id</td>
+            <td>@account.Balance</td>
+            <td>@account.Created</td>
+    </tr>
+        }
+</table>

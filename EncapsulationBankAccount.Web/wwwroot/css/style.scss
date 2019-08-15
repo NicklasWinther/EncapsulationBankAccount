@@ -1,0 +1,35 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+body {
+    background-color: #eee;
+    font-family: Roboto;
+    h1{
+        font-family: open sans;
+        text-align: center;
+    }
+    table {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+
+        tr {
+            th {
+                background-color: #aaa;
+                padding: 10px;
+
+            }
+
+            td {
+                padding: 10px;
+            }
+        }
+
+        tr:nth-child(odd) {
+            background-color: #aaa;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ccc;
+        }
+    }
+}
